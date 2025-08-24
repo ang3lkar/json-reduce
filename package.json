@@ -7,7 +7,7 @@
   "publisher": "ang3lkar",
   "displayName": "JSON Reduce",
   "description": "Reduce large JSON objects to ease readability",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/ang3lkar/json-reduce"
@@ -19,8 +19,12 @@
   "scripts": {
     "test": "node --test src/compact.test.js"
   },
-  "categories": ["Other"],
-  "activationEvents": ["onCommand:json-reduce.run"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:json-reduce.run"
+  ],
   "main": "./index.js",
   "contributes": {
     "commands": [
@@ -34,14 +38,14 @@
       "title": "JSON Reduce Configuration",
       "properties": {
         "jsonReduce.stringLimit": {
-            "type": "number",
-            "default": 300,
-            "description": "JSON reduce: The maximum length of string values when reducing JSON."
+          "type": "number",
+          "default": 300,
+          "description": "JSON reduce: The maximum length of string values when reducing JSON."
         },
         "jsonReduce.arrayLimit": {
-            "type": "number",
-            "default": 3,
-            "description": "JSON reduce: The maximum number of items in arrays when reducing JSON."
+          "type": "number",
+          "default": 3,
+          "description": "JSON reduce: The maximum number of items in arrays when reducing JSON."
         }
       }
     }
